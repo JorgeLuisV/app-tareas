@@ -1,0 +1,8 @@
+.task-list {
+    margin: 0;
+    padding: 0;
+}
+
+.task-list > .TodoItem {
+    margin-bottom: 15px;
+}

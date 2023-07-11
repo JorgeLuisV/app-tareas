@@ -1,0 +1,74 @@
+.TodoItem {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.1);
+}
+
+.TodoItem-p {
+  margin: 20px 0 20px 20px;
+  width: calc(100% - 120px);
+  line-height: 24px;
+  font-weight: 300;
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.check-icon {
+  position: absolute;
+  left: 20px;
+  background-color: #eeeeee;
+  border: 1px solid #e0e0e0;
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #9e9e9e;
+  transition: all .4s;
+}
+
+.check-icon.checked {
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+}
+
+.check-icon.checked > .check {
+  color: #2196f3;
+}
+
+.check-icon > .check:hover {
+  color: #2196f3;
+}
+
+.Icon-delete {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: #9e9e9e;
+  transition: all .4s;
+  cursor: pointer;
+}
+.Icon-delete:hover {
+  color: #ef5350;
+}
+
+.spin {
+  animation: spin infinite 3s linear;
+}
+
+@keyframes spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}

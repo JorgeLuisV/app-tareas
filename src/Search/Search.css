@@ -1,0 +1,35 @@
+
+.search-group {
+    position: relative;
+}
+
+.search-group > .search-icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: .8em;
+    opacity: .5;
+}
+
+.search {
+    display: block;
+    width: 100%;
+    padding: .375rem 1rem .375rem 2.4rem;
+    font-weight: 400;
+    line-height: 2;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.search:focus {
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}

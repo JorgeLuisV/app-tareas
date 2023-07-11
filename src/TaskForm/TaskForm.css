@@ -1,0 +1,71 @@
+.taskForm {
+    background-color: #fafafa;
+    display: flex;
+    flex-flow: column;
+    max-width: 400px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.taskForm label{
+    color: #212121;
+    margin-bottom: 15px;
+}
+
+.taskForm textarea {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 2;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 16px;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.taskForm textarea:focus {
+    outline: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.formActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formBtn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.formBtn.create {
+    background-color: #2196f3;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
